@@ -76,6 +76,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   FloatingActionButton(
                     onPressed: () {
+                      value.kurang();
+                    },
+                    tooltip: 'Kurang',
+                    child: const Icon(Icons.remove),
+                  ),
+                  FloatingActionButton(
+                    onPressed: () {
                       value.increment();
                     },
                     tooltip: 'Increment',
